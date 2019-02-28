@@ -1,0 +1,45 @@
+.app{
+    background-color: #F9F9F9;
+}
+.backImg{
+    margin-top: 231px;
+    width: 860px;
+    height: 443.93px;
+    float: right;
+}
+
+.rectangle {
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 7px 3px rgba(0, 0, 0, 0.1);
+    width: 430px;
+    height: 746px;
+  }
+  .rectangle * {
+      margin-left: 43px;
+
+  }
+
+  .logo {
+    display: inline-block;
+    color: #4A4A4A;
+    font-family: Righteous;
+    font-size: 36px;
+    font-weight: 400;
+    margin-top: 52px;
+    margin-bottom: 42px;
+    letter-spacing: 14px;
+    line-height: 43px;
+    text-align: left;
+  }
+
+  .spanLogin {
+    color: #4A4A4A;
+    display: block;
+    font-family: OpenSans;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 19px;
+    text-align: left;
+  }
+
