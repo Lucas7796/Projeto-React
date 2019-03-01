@@ -13,6 +13,9 @@ export default props =>
             <form className="rectangle">
                 <span className="logo">ORANGE</span>
                 <span className="spanLogin">E-mail</span>
+                <input className="inputLogin"></input>
+                <span className="spanLogin">Senha</span>
+                <input className="inputLogin"></input>
             </form>
 
         </div>
