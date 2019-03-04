@@ -1,11 +1,14 @@
-.app{
+body{
     background-color: #F9F9F9;
 }
+
 .backImg{
     margin-top: 231px;
-    width: 860px;
-    height: 443.93px;
-    float: right;
+    width: 800px;
+    height: 403.93px;
+    right: 0;
+    position: absolute;
+    z-index: 0;
 }
 
 .rectangle {
@@ -13,6 +16,10 @@
     box-shadow: 0 2px 7px 3px rgba(0, 0, 0, 0.1);
     width: 430px;
     height: 746px;
+    margin-left: 180px;
+    margin-top: 49px;;
+    position: absolute;
+    z-index: 1;
   }
   .rectangle * {
       margin-left: 43px;
@@ -41,5 +48,76 @@
     letter-spacing: 1px;
     line-height: 19px;
     text-align: left;
+    
   }
 
+  .inputLogin {
+    border: 1px solid #4A4A4A;
+    width: 335px;
+    height: 55px;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 15px;
+  }
+
+  .checkBoxLogin {
+    border: 1px solid #4A4A4A;
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+  }
+
+  .spanCheckBox{
+    color: #4A4A4A;
+    font-family: OpenSans;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 19px;
+    text-align: left;
+    margin-left: 5px;
+    position: relative;
+    vertical-align: middle;
+  }
+
+  .problemas-para-acess {
+    color: #4A4A4A;
+    display: block;
+    font-family: OpenSans;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 39px;
+    margin-bottom: 44px;
+    letter-spacing: 1px;
+    line-height: 17px;
+    text-align: left;
+  }
+
+  .btnAcessar {
+    background-image: linear-gradient(134.72deg, #AE23A9 0%, #DC4E1B 100%);
+    width: 350px;
+    height: 55px;
+    color: #FFFFFF;
+    font-family: OpenSans;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 19px;
+    text-align: center;
+  }
+
+  .hrLogin{
+    width: 350px;
+    margin-top: 43px;
+    margin-bottom: 41px;
+  }
+
+  .btnCadastrar {
+    background-color: #FFFFFF;
+    border: 1px solid #9B9B9B;
+    color: #9B9B9B;
+    width: 350px;
+    height: 45px;
+  }

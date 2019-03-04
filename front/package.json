@@ -4,10 +4,11 @@
   "private": true,
   "dependencies": {
     "axios": "0.18.0",
-    "react-router": "4.2.0",
-    "react-router-dom": "4.2.2",
+    "parse": "^2.2.1",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
+    "react-router": "4.2.0",
+    "react-router-dom": "4.2.2",
     "react-scripts": "2.1.5"
   },
   "scripts": {
