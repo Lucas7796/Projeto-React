@@ -4,13 +4,11 @@ import React from 'react'
 import imagem from "../../assets/bg.jpg"
 import {Link} from 'react-router-dom'
 
-import Parse from 'parse'
-
 export default props =>
     
 <div className="app">
-    <img src={imagem} className="backImg"/>
-    <form className="rectangle">
+    <img src={imagem} className="backImg" alt="PC Table"/>
+    <form className="rectangle" >
         <span className="logo">ORANGE</span>
         <label className="spanLogin" >Email</label>
         <input className="inputLogin" placeholder="seuemail@mail.com"></input>

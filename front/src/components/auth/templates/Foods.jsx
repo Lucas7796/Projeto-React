@@ -6,19 +6,13 @@ import Parse from 'parse'
 Parse.initialize("OSGiFZBrXxNLjN3gYDPsgi7P4a0j6fzcc2iaCKga");
 Parse.serverURL = 'http://localhost:1337/parse';
 const amem = Parse.Cloud.run('getAllFoods')
-// console.log(amem);
 
-let foods = [];
-amem.then(data => foods = data[1].id)
-console.log(foods)
-// .then((values) => {
-// const objectId = values[1].id;
-// const nome = values[1].get("name");
-// console.log(objectId);
-// console.log(nome);
-// // values.map()
-// }
-// );
+//shows in the console the list of links of images
+//could not dispose the images in the screen in time
+amem.then((values) => {
+const links = values.map(value => value.get("link"))
+console.table(links)}
+);
 
 export default props =>
 
