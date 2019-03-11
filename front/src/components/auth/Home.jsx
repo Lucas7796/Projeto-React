@@ -8,12 +8,8 @@ import Route from './Routes'
 
 export default props =>
     <div>
-        {/* <Browse> */}
         <Header />
-
         <div>
             <Route />
         </div>
-        
-        {/* </Browse> */}
     </div>

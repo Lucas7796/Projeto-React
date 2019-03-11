@@ -1,0 +1,9 @@
+.image {
+    background-size: 100%;
+    box-shadow: 0 2px 7px 3px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    width: 290px;
+    height: 290px;
+    margin-right: 35px;
+    margin-bottom: 35px
+  }

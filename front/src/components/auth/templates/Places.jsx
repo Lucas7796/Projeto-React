@@ -1,22 +1,55 @@
 import './style.css'
-import React from 'react'
+import React, { Component } from 'react'
 import Line from './TitleLine'
+import Card from './cards/Card'
+
+
 
 import Parse from 'parse'
 Parse.initialize("OSGiFZBrXxNLjN3gYDPsgi7P4a0j6fzcc2iaCKga");
 Parse.serverURL = 'http://localhost:1337/parse';
-const amem = Parse.Cloud.run('getAllPlaces')
+const people = Parse.Cloud.run('getAllPlaces')
 
-//shows in the console the list of links of places
-//could not dispose the images in the screen in time
-amem.then((values) => {
-const links = values.map(value => value.get("link"))
-console.table(links)}
-);
+const initialState = {
+    list: []
+}
 
-export default props =>
+const imgProps = {
+    img: []
+}
 
-<div className="title">
-    <span>LIST OF PLACES</span>
-    <Line />
-</div>
+export default class Places extends Component {
+
+    state = {...initialState}
+   
+
+    renderCard(){
+        
+        return  this.state.list.map(imagem =>{
+            imgProps.img = imagem
+            return(
+                <Card {...imgProps}/>
+            )
+        })
+    }
+
+    componentWillMount(){
+        people.then((values) => {
+            const links = values.map(value => value.get("link"))
+            this.setState({list: links})
+            imgProps.list = this.state.list
+            }
+        )
+    }
+
+render(){
+    return (
+    <div className="title">
+        <span>LIST OF PLACES</span>
+        <Line />
+        {this.renderCard()}
+        
+    </div>
+    )
+}
+}
