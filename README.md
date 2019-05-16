@@ -9,6 +9,6 @@
 - The authentication part is still not done.
 
 ## How do I run the project on my PC?
-- You must have node intalled
+- You must have node installed
 - Clone this repo and run 'npm install' and then 'npm start' in the 'front' folder. After that run 'npm install' and 'node app.js' in the 'backend' folder.
 - The app will be running on http://localhost:3005
